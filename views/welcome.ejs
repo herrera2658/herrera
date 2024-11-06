@@ -8,33 +8,38 @@
     <title>Bienvenido</title>
 </head>
 <body>
-
-    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
-       
+    <!-- Barra de navegación superior con Bootstrap -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-warning">
+        <!-- Título o logo del proyecto -->
         <a class="navbar-brand" href="#">Proyecto Web</a>
-        
+        <!-- Opciones de navegación alineadas a la derecha -->
         <div class="ml-auto">
-           
+            <!-- Botón para ir a la página de Login -->
             <a class="btn btn-outline-light mr-2" href="/login">Login</a>
-         
+            <!-- Botón para ir a la página de Register -->
             <a class="btn btn-outline-light" href="/register">Register</a>
         </div>
     </nav>
 
+    <!-- Contenido principal de la página -->
     <div class="main-content">
-   
+        <!-- Contenedor centrado para mostrar el mensaje de bienvenida -->
         <div class="container text-center mt-5">
-          
-            <h1 class="text-success">Bienvenido, <%= userName %>!</h1>
-         
+            <!-- Mensaje de bienvenida que muestra el nombre de usuario dinámicamente -->
+            <h1 class="text-warning">Bienvenido, <%= userName%>!</h1>
+            <!-- Mensaje adicional de bienvenida -->
             <p>¡Nos alegra que estés aquí!</p>
-        </div>
-    </div>
 
-    <footer class="bg-success text-white text-center p-3">
-      
+             <!-- Botón para acceder a los datos personales -->
+             <a href="/profile" class="btn btn-warning mt-4">Datos Personales</a>
+            </div>
+        </div>
+   
+
+    <!-- Footer al final de la página -->
+    <footer class="bg-warning text-white text-center p-3">
+        <!-- Texto del footer con derechos de autor -->
         <p>&copy; 2024 Proyecto Web. Desarrollado por Jhuliet Tibasosa</p>
     </footer>
 </body>
 </html>
-
