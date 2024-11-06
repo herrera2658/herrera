@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="/css/stayle.css">
+    <title>Login</title>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+ 
+        <a class="navbar-brand" href="#">Proyecto Web</a>
+        
+        <div class="ml-auto">
+            <a class="btn btn-outline-light mr-2" href="/login">Login</a>
+            <a class="btn btn-outline-light" href="/register">Register</a>
+        </div>
+    </nav>
+
+    <div class="container mt-5">
+        <div class="form-container">
+            <h2 class="text-center">Login</h2>
+          
+            <form action="/welcome" method="GET">
+               
+                <div class="form-group">
+                    <label for="name">Nombre</label>
+                    <input type="text" class="form-control" id="name" name="name" required>
+                </div>
+             
+                <div class="form-group">
+                    <label for="password">Contraseña</label>
+                    <input type="password" class="form-control" id="password" required>
+                </div>
+               
+                <button type="submit" class="btn btn-success btn-block">Ingresar</button>
+            </form>
+        </div>
+    </div>
+
+
+    <footer class="bg-success text-white text-center p-3 mt-5 fixed-bottom">
+        <p>&copy; 2024 Proyecto Web. Desarrollado por Jhuliet Tibasosa</p>
+    </footer>
+</body>
+</html>
